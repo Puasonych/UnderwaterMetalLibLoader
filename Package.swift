@@ -16,11 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "UnderwaterMetalLibLoader",
-            dependencies: [],
-            resources: [
-                .process("Octopus.metal"),
-                .process("PostProcessing.metal"),
-                .process("Seaweed.metal")]),
+            dependencies: []),
         .testTarget(
             name: "UnderwaterMetalLibLoaderTests",
             dependencies: ["UnderwaterMetalLibLoader"]),
